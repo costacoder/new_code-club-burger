@@ -1,0 +1,17 @@
+Exemplar para terminal:
+
+    Para criar uma nova migration:
+        npx sequelize-cli migration:create --name=nome-da-migration
+
+
+    Para rodar a migration (método up):
+        npx sequelize db:migrate
+
+
+    Para usar o método down:
+
+    desfazer a última migration
+        npx sequelize db:migrate:undo
+
+    desfazer todas as migrations
+        npx sequelize db:migrate:undo:all
